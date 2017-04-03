@@ -17,16 +17,14 @@ end
 
 class HelloWorldTest < Minitest::Test
   def test_no_name
-    assert_equal 'Hello, World!', HelloWorld.hello
+    assert_equal 'Hello, World!', HelloWorld.hello('')
   end
 
   def test_sample_name
-    skip
     assert_equal 'Hello, Alice!', HelloWorld.hello('Alice')
   end
 
   def test_other_sample_name
-    skip
     assert_equal 'Hello, Bob!', HelloWorld.hello('Bob')
   end
 end
